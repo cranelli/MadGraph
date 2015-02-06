@@ -1,0 +1,75 @@
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+c      written by the UFO converter
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+anoinputs 1 FS0
+
+anoinputs 2 FS1
+
+anoinputs 3 FM0
+
+anoinputs 4 FM1
+
+anoinputs 5 FM2
+
+anoinputs 6 FM3
+
+anoinputs 7 FM4
+
+anoinputs 8 FM5
+
+anoinputs 9 FM6
+
+anoinputs 10 FM7
+
+anoinputs 11 FT0
+
+anoinputs 12 FT1
+
+anoinputs 13 FT2
+
+anoinputs 14 FT3
+
+anoinputs 15 FT4
+
+anoinputs 16 FT5
+
+anoinputs 17 FT6
+
+anoinputs 18 FT7
+
+anoinputs 19 FT8
+
+anoinputs 20 FT9
+
+ckmblock 1 cabi
+
+sminputs 1 aEWM1
+
+sminputs 2 Gf
+
+sminputs 3 aS
+
+yukawa 5 ymb
+
+yukawa 6 ymt
+
+yukawa 15 ymtau
+
+mass 15 MTA
+
+mass 6 MT
+
+mass 5 MB
+
+mass 23 MZ
+
+mass 25 MH
+
+decay 6 WT
+
+decay 23 WZ
+
+decay 24 WW
+
+decay 25 WH
