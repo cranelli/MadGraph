@@ -29,7 +29,7 @@
 # Warning: Do not generate more than 1M events in a single run       *
 # If you want to run Pythia, avoid more than 50k events in a run.    *
 #*********************************************************************
-  100000 = nevents ! Number of unweighted events requested 
+  10000 = nevents ! Number of unweighted events requested 
       0       = iseed   ! rnd seed (0=assigned automatically=default))
 #*********************************************************************
 # Collider type and energy                                           *
@@ -48,7 +48,8 @@
 #*********************************************************************
 # PDF CHOICE: this automatically fixes also alpha_s and its evol.    *
 #*********************************************************************
- 'cteq6l1'    = pdlabel     ! PDF set                                     
+ 'lhapdf'    = pdlabel     ! PDF set                                     
+  263000    = lhaid     ! if pdlabel=lhapdf, this is the lhapdf number 
 #*********************************************************************
 # Renormalization and factorization scales                           *
 #*********************************************************************
@@ -102,10 +103,10 @@
 #*********************************************************************
 # Minimum and maximum pt's (for max, -1 means no cut)                *
 #*********************************************************************
- 20  = ptj       ! minimum pt for the jets 
+ 10  = ptj       ! minimum pt for the jets 
   0  = ptb       ! minimum pt for the b 
  10  = pta       ! minimum pt for the photons 
- 20  = ptl       ! minimum pt for the charged leptons 
+  0  = ptl       ! minimum pt for the charged leptons 
   0  = misset    ! minimum missing Et (sum of neutrino's momenta)
   0  = ptheavy   ! minimum pt for one heavy final state
  1.0 = ptonium   ! minimum pt for the quarkonium states
@@ -128,10 +129,10 @@
 #*********************************************************************
 # Maximum and minimum absolute rapidity (for max, -1 means no cut)   *
 #*********************************************************************
-   5  = etaj    ! max rap for the jets 
+  -1  = etaj    ! max rap for the jets 
   -1  = etab    ! max rap for the b
  3.0  = etaa    ! max rap for the photons 
- 3.0  = etal    ! max rap for the charged leptons 
+  -1  = etal    ! max rap for the charged leptons 
  0.6  = etaonium ! max rap for the quarkonium states
    0  = etajmin ! min rap for the jets
    0  = etabmin ! min rap for the b
@@ -229,8 +230,8 @@
 # When ptgmin=0, all the other parameters are ignored                  *
 # When ptgmin>0, pta and draj are not going to be used                 *
 #***********************************************************************
-   0 = ptgmin ! Min photon transverse momentum
- 0.4 = R0gamma ! Radius of isolation code
+ 10 = ptgmin ! Min photon transverse momentum
+ 0.05 = R0gamma ! Radius of isolation code
  1.0 = xn ! n parameter of eq.(3.4) in hep-ph/9801442
  1.0 = epsgamma ! epsilon_gamma parameter of eq.(3.4) in hep-ph/9801442
  .true. = isoEM ! isolate photons from EM energy (photons and leptons)
@@ -248,7 +249,7 @@
 # maximal pdg code for quark to be considered as a light jet         *
 # (otherwise b cuts are applied)                                     *
 #*********************************************************************
- 4 = maxjetflavor    ! Maximum jet pdg code
+ 5 = maxjetflavor    ! Maximum jet pdg code
 #*********************************************************************
 # Jet measure cuts                                                   *
 #*********************************************************************
